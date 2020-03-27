@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="contact.component.css">
+  <meta charset="UTF-8">
+  <title>Kamil Węc - Kontakt</title>
+</head>
+<body>
+<div class="navbar">
+
+</div>
+<h1>Uzupełnij dane</h1>
+<form>
+  <div class="form-group">
+    <label for="imie">Imię</label>
+    <input type="text" class="form-control" id="imie" placeholder="Podaj imie">
+  </div>
+  <div class="form-group">
+    <label for="nazwisko">Nazwisko</label>
+    <input type="text" class="form-control" id="nazwisko" placeholder="Wpisz nazwisko">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Podaj email">
+  </div>
+  <div class="form-group">
+    <label for="plec">Plec</label><br>
+    <input type="radio" id="plec" name="gender" value="Męzczyzna"> Mezczyzna
+    <input type="radio" name="gender" value="Kobieta"> Kobieta
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Opis</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" cols="50"></textarea>
+  </div>
+  <div>
+    <label for="wiek">Wiek</label><br>
+    <input type="number"  id="wiek" min="1" max="100" placeholder="18"><br>
+  </div>
+  <div class="form-group">
+    <label for="stancywilny">Stan cywilny</label><br>
+    <select>
+      <option id="stancywilny" value="Panna/kawaler">Panna/kawaler</option>
+      <option value="Zamezna/zonaty">Zamezna/zonaty</option>
+    </select>
+  </div>
+  <div>
+    <button type="reset">Wyczysc</button>
+    <button type="submit">Wyslij</button>
+  </div>
+
+</form>
+<script src="js/navbar.js"></script>
+<script src="js/scroll.js"></script>
+</body>
+<div class="scroll">
+  <button class="btn btn-success">
+    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>Do góry
+  </button>
+</div>
+<footer class="center">
+  Copyrights &copy; Kamil Węc | 2019
+</footer>
+</html>
