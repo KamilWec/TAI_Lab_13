@@ -9,6 +9,8 @@ export class BlogItemTextComponent implements OnInit {
 
   @Input() text: string;
 
+  @Input() id: number;
+
   constructor() { }
 
   ngOnInit() {
