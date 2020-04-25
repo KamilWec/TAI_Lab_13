@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 import {fromEvent} from 'rxjs/observable/fromEvent';
 import {debounceTime, distinctUntilChanged, map, switchMap} from 'rxjs/operators';
-import {DataService} from '../services/data-service.service';
+import {DataService} from './services/data-service.service';
 
 @Component({
   selector: 'selectize',
