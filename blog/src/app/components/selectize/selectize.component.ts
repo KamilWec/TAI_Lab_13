@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 import {fromEvent} from 'rxjs/observable/fromEvent';
 import {debounceTime, distinctUntilChanged, map, switchMap} from 'rxjs/operators';
-import {DataService} from './services/data-service.service';
+import {DataService} from '../../services/data.service';
 
 @Component({
   selector: 'selectize',
@@ -15,7 +15,7 @@ import {DataService} from './services/data-service.service';
 })
 export class SelectizeComponent implements AfterViewInit {
 
-  @ViewChild('input') input: ElementRef;
+  @ViewChild('input', null) input: ElementRef;
   public posts$;
 
   constructor(private dataService: DataService) {
