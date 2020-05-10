@@ -20,6 +20,7 @@ import { FilterPipe } from './pipes/filter.pipe';
 import { TextFormatDirective } from './directives/text-format.directive';
 import { DataService } from "./services/data.service";
 import { SelectizeComponent } from './components/selectize/selectize.component';
+import { AddPostComponent } from './components/add-post/add-post.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { SelectizeComponent } from './components/selectize/selectize.component';
     BlogHomeComponent,
     FilterPipe,
     TextFormatDirective,
-    SelectizeComponent
+    SelectizeComponent,
+    AddPostComponent
   ],
   imports: [
     BrowserModule,
