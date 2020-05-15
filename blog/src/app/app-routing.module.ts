@@ -9,23 +9,38 @@ import { BlogHomeComponent } from "./components/blog-home/blog-home.component";
 const routes: Routes = [
   {
 	    path: '',
-	    component: HomeComponent
+	    component: HomeComponent,
+	    canActivate: [AdminGuard]
   },
   {
 	    path: 'contact',
-	    component: ContactComponent
+	    component: ContactComponent,
+	    canActivate: [AdminGuard]
   },
   {
       path: 'blog',
-	    component: BlogHomeComponent
+	    component: BlogHomeComponent,
+	    canActivate: [AdminGuard]
   },
   {
       path: 'blog/detail/:id',
-      component: BlogItemDetailsComponent
+      component: BlogItemDetailsComponent,
+      canActivate: [AdminGuard]
   },
   {
       path: 'add-post',
-      component: AddPostComponent
+      component: AddPostComponent,
+      canActivate: [AdminGuard]
+  },
+  {
+      path: 'login',
+      component: LoginComponent,
+      canActivate: [AdminGuard]
+  },
+  {
+      path: 'signup',
+      component: SignUpcomponent,
+      canActivate: [AdminGuard]
   }
 ];
 
