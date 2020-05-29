@@ -11,4 +11,7 @@
     </li>
     <button (click)="logOut()" class="dropdown-item">Wyloguj</button>
   </ul>
+  <a class="nav-link" routerLink="/login" *ngIf="!authService.currentUser">Zaloguj</a>
+  <button class="nav-link" (click)="logOut()" *ngIf="authService.currentUser">Wyloguj</button>
+  <a class="nav-link" routerLink="/signup" *ngIf="!authService.currentUser">Zarejestruj</a>
 </nav>
